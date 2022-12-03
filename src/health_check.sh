@@ -1,5 +1,10 @@
 #!/bin/bash
 
-echo "Hello from shell script"
+health=$(curl https://shy-firefly-6436.fly.dev/health)
 
-exit 0 # exit status 1 means that the script "fails"
+if [ "$health" = "ok" ]
+then
+    exit 0
+else
+    exit 1
+fi
