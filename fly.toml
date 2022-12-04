@@ -51,12 +51,3 @@ kill_timeout = 5
     timeout = 2000
     tls_skip_verify = false
     [services.http_checks.headers]
-
-  [[services.script_checks]]
-    command       = "/app/src/health_check.sh"
-    args          = []
-    grace_period  = "10s"
-    interval      = "10s"
-    restart_limit = 0
-    timeout       = "5s"
-
