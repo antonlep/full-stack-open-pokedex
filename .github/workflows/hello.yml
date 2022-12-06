@@ -31,4 +31,4 @@ jobs:
       - name: commit messages
         env:
           COMMIT_MESSAGES: ${{ toJson(github.event.commits.*.message) }}
-        run: echo xontains( "$COMMIT_MESSAGES", "ex" )
+        run: echo contains( "$COMMIT_MESSAGES", "ex" )
