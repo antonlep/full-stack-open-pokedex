@@ -65,4 +65,3 @@ jobs:
             severity: info
             details: Deployment succesful.
             webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
-            
